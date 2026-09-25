@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4b197d">
+  <meta name="description" content="SERASA Keripik Pedas - renyah, gurih, pedasnya nagih.">
+  <title>SERASA — Keripik Pedas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="brand">
+        <img src="assets/serasa-logo.jpg" alt="SERASA" class="logo">
+        <span>KERIPIK PEDAS</span>
+      </a>
+      <a href="#order" class="nav-order">Pesan Sekarang</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">SERASA • KERIPIK PEDAS</span>
+          <h1>Pedasnya <em>nagih</em>,<br>rasanya SERASA!</h1>
+          <p>Keripik renyah dengan bumbu pedas gurih yang cocok untuk teman santai, kerja, nonton, atau kapan saja.</p>
+          <div class="hero-price">
+            <strong>Rp20.000</strong>
+            <span>/ pouch</span>
+          </div>
+          <a href="#order" class="btn btn-primary">🔥 Pesan Sekarang</a>
+        </div>
+        <div class="hero-product">
+          <div class="burst burst-one">PEDAS!</div>
+          <div class="product-frame">
+            <img src="assets/product-detail.jpg" alt="SERASA Keripik Pedas">
+          </div>
+          <div class="burst burst-two">NAGIH!</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <div class="container product-grid">
+        <div class="gallery">
+          <div class="gallery-card">
+            <img src="assets/product-main.jpg" alt="Keripik Pedas SERASA">
+          </div>
+          <div class="mini-gallery">
+            <img src="assets/product-detail.jpg" alt="Kemasan SERASA">
+            <img src="assets/product-main.jpg" alt="Produk SERASA">
+          </div>
+        </div>
+
+        <div class="product-info">
+          <span class="section-label">PRODUK SERASA</span>
+          <h2>Keripik Pedas</h2>
+          <p class="lead">Renyah, gurih, dan pedasnya bikin ingin ambil satu pouch lagi.</p>
+          <div class="price">Rp20.000 <small>/ pouch</small></div>
+
+          <div class="features">
+            <div class="feature"><span>🌶️</span><div><b>Pedas Mantap</b><small>Bumbu pedas yang berasa.</small></div></div>
+            <div class="feature"><span>✨</span><div><b>Renyah & Gurih</b><small>Teman ngemil kapan saja.</small></div></div>
+            <div class="feature"><span>📦</span><div><b>Kemasan Praktis</b><small>Mudah dibawa dan disimpan.</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="container">
+        <div class="order-heading">
+          <span class="section-label">ORDER ONLINE</span>
+          <h2>Pesan Keripik SERASA</h2>
+          <p>Isi data di bawah. Setelah menekan tombol, detail pesanan akan disiapkan untuk dikirim ke WhatsApp admin.</p>
+        </div>
+
+        <div class="order-card">
+          <div class="order-product">
+            <img src="assets/product-detail.jpg" alt="Keripik Pedas">
+            <div>
+              <h3>Keripik Pedas</h3>
+              <p>Rp20.000 / pouch</p>
+              <div class="qty">
+                <button type="button" id="minus">−</button>
+                <input id="quantity" type="number" min="1" value="1" aria-label="Jumlah pouch">
+                <button type="button" id="plus">+</button>
+              </div>
+            </div>
+            <strong id="itemTotal">Rp20.000</strong>
+          </div>
+
+          <form id="orderForm">
+            <label>
+              Nama Lengkap
+              <input id="name" type="text" placeholder="Masukkan nama lengkap" required>
+            </label>
+            <label>
+              Nomor WhatsApp
+              <input id="phone" type="tel" placeholder="Contoh: 081234567890" required>
+            </label>
+            <label>
+              Alamat Pengiriman
+              <textarea id="address" rows="4" placeholder="Masukkan alamat lengkap" required></textarea>
+            </label>
+            <label>
+              Catatan <span class="optional">(opsional)</span>
+              <textarea id="note" rows="2" placeholder="Contoh: kirim sore / patokan rumah"></textarea>
+            </label>
+
+            <div class="total-row">
+              <span>Total Harga</span>
+              <strong id="grandTotal">Rp20.000</strong>
+            </div>
+
+            <button class="btn btn-wa" type="submit">💬 Kirim Pesanan via WhatsApp</button>
+            <p class="admin-note">Admin WhatsApp: <a href="https://wa.me/6281367064147" target="_blank" rel="noopener">0813-6706-4147</a></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section">
+      <div class="container">
+        <div class="why-grid">
+          <div><span>🌶️</span><h3>Pedasnya Berasa</h3><p>Bumbu pedas gurih untuk pecinta keripik.</p></div>
+          <div><span>😋</span><h3>Renyah & Gurih</h3><p>Cocok untuk ngemil sendiri maupun berbagi.</p></div>
+          <div><span>📱</span><h3>Order Mudah</h3><p>Pesan langsung melalui WhatsApp admin.</p></div>
+          <div><span>📦</span><h3>Praktis</h3><p>Kemasan pouch mudah dibawa ke mana saja.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <img src="assets/serasa-logo.jpg" alt="SERASA" class="footer-logo">
+        <p>Keripik Pedas — pedasnya nagih, rasanya SERASA.</p>
+      </div>
+      <a href="https://wa.me/6281367064147" target="_blank" rel="noopener" class="btn btn-primary">Chat Admin</a>
+    </div>
+    <div class="copyright">© <span id="year"></span> SERASA. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
